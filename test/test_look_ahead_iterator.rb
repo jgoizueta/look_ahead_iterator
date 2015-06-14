@@ -98,7 +98,7 @@ class TestLookAheadIterator < Minitest::Test
     assert_equal 33, it.next
     assert_equal 44, it.next
     assert_equal 55, it.next
-    assert_raise(StopIteration){ it.next }
+    assert_raises(StopIteration){ it.next }
     assert it.ended?
     refute it.next?
 
@@ -120,7 +120,7 @@ class TestLookAheadIterator < Minitest::Test
     assert_equal 55, it.next
     assert_equal :end, it.look_ahead(2)
     assert_equal :end, it.look_ahead(1)
-    assert_raise(StopIteration){ it.next }
+    assert_raises(StopIteration){ it.next }
     assert it.ended?
     refute it.next?
   end
