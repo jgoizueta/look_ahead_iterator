@@ -9,7 +9,7 @@ end
 
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
-  version = SysCmd::VERSION
+  version = LookAheadIterator::VERSION
 
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "LookAheadIterator #{version}"
